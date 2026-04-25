@@ -447,8 +447,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 // ── GET ELEMENT ID FROM URL ──────────────────────────────────
-const params    = new URLSearchParams(window.location.search);
-const elementId = params.get("id");
+const elementId = "B145";  // Direct Beam B145 - no URL parameter needed
 
 // ── GENERATE QR DYNAMICALLY ─────────────────────────────────
 (function(){
