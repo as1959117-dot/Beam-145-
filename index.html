@@ -457,23 +457,23 @@ const elementsData = {
     hangerBars:"4 ∅10", stirrupsSupport:"4 legs ∅10 @ 125 mm",
     stirrupsSpan:"4 legs ∅10 @ 300 mm", deflectionActual:"20 mm",
     deflectionAllow:"51 mm", deflectionRatio:"0.39 - PASS",
-    constructionStatus:"Not Started", currentActivity:"Design approved — awaiting site mobilization",
-    progressPercent:"0", lastUpdated:"15 Mar 2026, 10:30", updatedBy:"BIM Manager - Group 1",
-    slumpTest:"Not yet tested", cube7day:"Not yet tested", cube28day:"Not yet tested",
-    testLab:"UKAS-accredited laboratory, Nottingham (awaiting samples)",
-    cubeSamples:"Not yet taken", qaApprovalStatus:"Awaiting construction commencement",
+    constructionStatus:"Active Construction", currentActivity:"Concrete curing — awaiting formwork strike",
+    progressPercent:"75", lastUpdated:"26 Apr 2026, 09:15", updatedBy:"Site Engineer - Group 1",
+    slumpTest:"75 mm (S3) — Pass", cube7day:"27.1 MPa", cube28day:"38.4 MPa — Pass",
+    testLab:"UKAS-accredited laboratory, Nottingham",
+    cubeSamples:"Not yet taken", qaApprovalStatus:"Approved — 28-day confirmed",
     revitElementId:"Beam - 145 (LAP-STR-L01)", bimFile:"Expansion after editing (Recovered).RTD",
-    modelSyncStatus:"Up to date", lastSynced:"15 Mar 2026, 08:00",
+    modelSyncStatus:"Up to date", lastSynced:"25 Apr 2026, 14:30",
     structuralSoftware:"Robot Structural Analysis 2026",
-    costTotal:"4,864.76", costNote:"BCIS East Midlands Q1 2026. Excludes prelims, OH and P.",
-    carbonDesignTotal:"4,775.88", carbonActualTotal:"0.00",
+    costTotal:"4,387.71", costNote:"BCIS East Midlands Q1 2026. Excludes prelims, OH and P.",
+    carbonDesignTotal:"4,775.88", carbonActualTotal:"4,352.54",
     carbonComparison:"Design estimate completed. Actual carbon will be tracked during construction from material delivery tickets and mill certificates.",
     costItems:[
       {desc:"Ready-Mix Concrete C35/45 — Tarmac, Nottingham", qty:"5.99", unit:"m3", supply:"118.00/m3", labour:"38.00/m3", total:"933.44"},
       {desc:"Steel Reinforcement B500C — A. Steadman and Son", qty:"1,206.99", unit:"kg", supply:"0.95/kg", labour:"0.48/kg", total:"1,726.00"},
-      {desc:"Formwork Supply, Erect and Strike — Alsford Timber", qty:"35.66", unit:"m2", supply:"32.00/m2", labour:"19.00/m2", total:"1,818.66"},
+      {desc:"Formwork Supply, Erect and Strike — Alsford Timber", qty:"26.74", unit:"m2", supply:"32.00/m2", labour:"19.00/m2", total:"1,364.00"},
       {desc:"Concrete Testing and QA — UKAS lab, Nottingham", qty:"1", unit:"item", supply:"155.00", labour:"—", total:"155.00"},
-      {desc:"Site Management and Supervision — CITB levy 5%", qty:"—", unit:"%", supply:"5%", labour:"—", total:"231.66"},
+      {desc:"Site Management and Supervision — CITB levy 5%", qty:"—", unit:"%", supply:"5%", labour:"—", total:"209.27"},
     ],
     carbonDesign:[
       {material:"Concrete C35/45", qty:"5.99", unit:"m3", factor:"310 kgCO2e/m3", total:"1,856.90"},
@@ -481,23 +481,31 @@ const elementsData = {
       {material:"Formwork (plywood)", qty:"35.66", unit:"m2", factor:"14.5 kgCO2e/m2", total:"517.07"},
     ],
     carbonActual:[
-      {material:"Concrete C35/45", qty:"0.00", unit:"m3", factor:"295 kgCO2e/m3", total:"0.00"},
-      {material:"Steel B500C (rebar)", qty:"0.00", unit:"kg", factor:"1.85 kgCO2e/kg", total:"0.00"},
-      {material:"Formwork (plywood)", qty:"0.00", unit:"m2", factor:"13.2 kgCO2e/m2", total:"0.00"},
+      {material:"Concrete C35/45", qty:"5.99", unit:"m3", factor:"295 kgCO2e/m3", total:"1,767.05"},
+      {material:"Steel B500C (rebar)", qty:"1,206.99", unit:"kg", factor:"1.85 kgCO2e/kg", total:"2,232.93"},
+      {material:"Formwork (plywood)", qty:"26.74", unit:"m2", factor:"13.2 kgCO2e/m2", total:"352.56"},
     ],
     phases:[
-      {num:"01", phase:"Substructure and Setting Out", description:"Grid lines C/4 to C/6 to be confirmed against datum.", standard:"BS 5606", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"02", phase:"Formwork Design and Erection", description:"Formwork to be designed for full hydrostatic pressure.", standard:"BS EN 13670", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"03", phase:"Rebar Delivery and Inspection", description:"B500C steel to be delivered with mill certificates.", standard:"BS 4449:2005", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"04", phase:"Reinforcement Fixing", description:"All bars and stirrups to be placed per IFC drawings.", standard:"EN 1992-1-1", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"05", phase:"Pre-Pour Inspection", description:"Full inspection required before concrete pour.", standard:"BS EN 13670", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"06", phase:"Concrete Supply and Pour", description:"C35/45 to be placed. Slump test required.", standard:"BS EN 206", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"07", phase:"Concrete Testing and QA", description:"4 cube samples to UKAS lab. Awaiting 28-day result.", standard:"BS EN 12390", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"08", phase:"Curing", description:"Polythene sheeting to be applied. Min 7 days required.", standard:"BS EN 13670 S8", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"09", phase:"Formwork Striking", description:"Props to remain until 25 MPa confirmed.", standard:"EN 1992-1-1 S7.4", approvedBy:"—", date:"Not started", status:"Pending"},
-      {num:"10", phase:"Final Inspection and Handover", description:"As-built to be checked against BIM. Revit model to be updated.", standard:"ISO 19650", approvedBy:"—", date:"Not started", status:"Pending"},
+      {num:"01", phase:"Substructure and Setting Out", description:"Grid lines C/4 to C/6 to be confirmed against datum.", standard:"BS 5606", approvedBy:"Site Eng.", date:"18 Mar 2026", status:"Approved"},
+      {num:"02", phase:"Formwork Design and Erection", description:"Formwork to be designed for full hydrostatic pressure.", standard:"BS EN 13670", approvedBy:"Temp Eng.", date:"25 Mar 2026", status:"Approved"},
+      {num:"03", phase:"Rebar Delivery and Inspection", description:"B500C steel to be delivered with mill certificates.", standard:"BS 4449:2005", approvedBy:"Site Eng.", date:"28 Mar 2026", status:"Approved"},
+      {num:"04", phase:"Reinforcement Fixing", description:"All bars and stirrups to be placed per IFC drawings.", standard:"EN 1992-1-1", approvedBy:"Lead Eng.", date:"02 Apr 2026", status:"Approved"},
+      {num:"05", phase:"Pre-Pour Inspection", description:"Full inspection required before concrete pour.", standard:"BS EN 13670", approvedBy:"QA Mgr.", date:"02 Apr 2026", status:"Approved"},
+      {num:"06", phase:"Concrete Supply and Pour", description:"C35/45 to be placed. Slump test required.", standard:"BS EN 206", approvedBy:"Site Eng.", date:"02 Apr 2026", status:"Approved"},
+      {num:"07", phase:"Concrete Testing and QA", description:"4 cube samples to UKAS lab. Awaiting 28-day result.", standard:"BS EN 12390", approvedBy:"QA Lab", date:"25 Apr 2026", status:"Approved"},
+      {num:"08", phase:"Curing", description:"Polythene sheeting to be applied. Min 7 days required.", standard:"BS EN 13670 S8", approvedBy:"Site Eng.", date:"25 Apr 2026", status:"In Progress"},
+      {num:"09", phase:"Formwork Striking", description:"Props to remain until 25 MPa confirmed.", standard:"EN 1992-1-1 S7.4", approvedBy:"—", date:"Pending", status:"Pending"},
+      {num:"10", phase:"Final Inspection and Handover", description:"As-built to be checked against BIM. Revit model to be updated.", standard:"ISO 19650", approvedBy:"—", date:"Pending", status:"Pending"},
     ],
-    constructionLog:[],
+    constructionLog:[
+      {date:"18 Mar 2026", time:"09:00", activity:"Setting out completed - grid confirmed", engineer:"Site Eng.", status:"Approved"},
+      {date:"25 Mar 2026", time:"08:30", activity:"Formwork erected and braced", engineer:"Formwork Contractor", status:"Approved"},
+      {date:"28 Mar 2026", time:"14:00", activity:"Reinforcement delivered - mill certs received", engineer:"Site Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"08:00", activity:"Rebar fixing completed - full inspection passed", engineer:"Lead Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"14:30", activity:"Concrete poured - slump test 75mm (PASS)", engineer:"Site Eng.", status:"Approved"},
+      {date:"10 Apr 2026", time:"09:00", activity:"7-day cube test: 27.1 MPa (awaiting 28-day)", engineer:"UKAS Lab", status:"In Progress"},
+      {date:"25 Apr 2026", time:"10:30", activity:"28-day cube test: 38.4 MPa - PASS. Striking not authorised until confirmed", engineer:"UKAS Lab", status:"Approved"},
+    ],
     deliveries:[],
     issues:[],
   },
@@ -527,7 +535,15 @@ const elementsData = {
       {num:"04", phase:"Curing", description:"Curing completed.", standard:"BS EN 13670", approvedBy:"Site Eng.", date:"10 Apr 2026", status:"Approved"},
       {num:"05", phase:"Striking", description:"Formwork removed.", standard:"EN 1992-1-1", approvedBy:"Lead Eng.", date:"10 Apr 2026", status:"Approved"},
     ],
-    constructionLog:[],
+    constructionLog:[
+      {date:"18 Mar 2026", time:"09:00", activity:"Setting out completed - grid confirmed", engineer:"Site Eng.", status:"Approved"},
+      {date:"25 Mar 2026", time:"08:30", activity:"Formwork erected and braced", engineer:"Formwork Contractor", status:"Approved"},
+      {date:"28 Mar 2026", time:"14:00", activity:"Reinforcement delivered - mill certs received", engineer:"Site Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"08:00", activity:"Rebar fixing completed - full inspection passed", engineer:"Lead Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"14:30", activity:"Concrete poured - slump test 75mm (PASS)", engineer:"Site Eng.", status:"Approved"},
+      {date:"10 Apr 2026", time:"09:00", activity:"7-day cube test: 27.1 MPa (awaiting 28-day)", engineer:"UKAS Lab", status:"In Progress"},
+      {date:"25 Apr 2026", time:"10:30", activity:"28-day cube test: 38.4 MPa - PASS. Striking not authorised until confirmed", engineer:"UKAS Lab", status:"Approved"},
+    ],
     deliveries:[],
     issues:[],
   },
@@ -541,12 +557,20 @@ const elementsData = {
     fck:"32.00 MPa", steelGrade:"B500B", fyk:"500.00 MPa",
     constructionStatus:"Not started — awaiting beam curing completion",
     currentActivity:"Waiting for Beam 145 and Column C12 curing sign-off",
-    progressPercent:"0", lastUpdated:"22 Apr 2026, 09:00", updatedBy:"BIM Manager - Group 1",
+    progressPercent:"75", lastUpdated:"22 Apr 2026, 09:00", updatedBy:"Site Engineer - Group 1",
     phases:[
       {num:"01", phase:"Rebar Preparation", description:"Slab rebar to be prepared.", standard:"BS 4449", approvedBy:"—", date:"Not started", status:"Pending"},
       {num:"02", phase:"Concrete Pour", description:"Slab concrete to be placed.", standard:"BS EN 206", approvedBy:"—", date:"Not started", status:"Pending"},
     ],
-    constructionLog:[],
+    constructionLog:[
+      {date:"18 Mar 2026", time:"09:00", activity:"Setting out completed - grid confirmed", engineer:"Site Eng.", status:"Approved"},
+      {date:"25 Mar 2026", time:"08:30", activity:"Formwork erected and braced", engineer:"Formwork Contractor", status:"Approved"},
+      {date:"28 Mar 2026", time:"14:00", activity:"Reinforcement delivered - mill certs received", engineer:"Site Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"08:00", activity:"Rebar fixing completed - full inspection passed", engineer:"Lead Eng.", status:"Approved"},
+      {date:"02 Apr 2026", time:"14:30", activity:"Concrete poured - slump test 75mm (PASS)", engineer:"Site Eng.", status:"Approved"},
+      {date:"10 Apr 2026", time:"09:00", activity:"7-day cube test: 27.1 MPa (awaiting 28-day)", engineer:"UKAS Lab", status:"In Progress"},
+      {date:"25 Apr 2026", time:"10:30", activity:"28-day cube test: 38.4 MPa - PASS. Striking not authorised until confirmed", engineer:"UKAS Lab", status:"Approved"},
+    ],
     deliveries:[],
     issues:[],
   }
@@ -569,7 +593,15 @@ window.addEventListener("DOMContentLoaded", () => {
     showError("No element ID in URL. Use index.html?id=B145");
     return;
   }
-  if (elementsData[elementId]) { populate(elementsData[elementId]); document.getElementById("loading-state").style.display = "none"; document.getElementById("main-content").style.display = "block"; } else { showError("Element not found"); }
+  
+  const d = elementsData[elementId];
+  if (d) {
+    populate(d);
+    document.getElementById("loading-state").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  } else {
+    showError('Element "' + elementId + '" not found. Check the ID.');
+  }
 });
 
 function showError(msg) {
@@ -798,7 +830,7 @@ function buildCharts(d) {
     {phase:"Setting Out",planned:3,actual:3},{phase:"Formwork",planned:5,actual:6},
     {phase:"Rebar Delivery",planned:2,actual:2},{phase:"Rebar Fixing",planned:4,actual:4},
     {phase:"Pre-Pour",planned:1,actual:1},{phase:"Concrete Pour",planned:1,actual:1},
-    {phase:"Curing",planned:7,actual:0},{phase:"QA Testing",planned:28,actual:0},
+    {phase:"Curing",planned:7,actual:15},{phase:"QA Testing",planned:28,actual:15},
   ];
   chartT = new Chart(document.getElementById("chart-timeline"), {
     type:"bar",
